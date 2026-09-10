@@ -173,17 +173,10 @@ for _, plugin in pairs(disabled_built_ins) do
     g["loaded_" .. plugin] = 1
 end
 
-
 -- Enable virtual_lines feature if the current nvim version is 0.11+
 if vim.fn.has("nvim-0.11") > 0 then
     vim.diagnostic.config({
         -- Use the default configuration
-        -- virtual_lines = true,
-
-        -- Alternatively, customize specific options
-        virtual_lines = {
-            -- Only show virtual line diagnostics for the current cursor line
-            current_line = true,
-        },
+        virtual_lines = true,
     })
 end
