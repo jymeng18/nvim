@@ -17,7 +17,6 @@ local formatting_servers = {
     jsonls = {},
     dockerls = {},
     bashls = {},
-    gopls = {},
     ruff_lsp = {},
     vimls = {},
     yamlls = {},
