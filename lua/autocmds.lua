@@ -56,6 +56,11 @@ autocmd("Filetype", {
 })
 
 autocmd("Filetype", {
+    pattern = { "c", "cpp" },
+    command = "setlocal cindent",
+})
+
+autocmd("Filetype", {
     pattern = { "gitcommit", "markdown", "text" },
     callback = function()
         vim.opt_local.wrap = true
