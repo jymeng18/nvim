@@ -67,38 +67,6 @@ local config = {
         lualine_x = {},
     },
 
-    tabline = {
-        lualine_a = {
-            {
-                "buffers",
-                max_length = vim.o.columns * 2 / 3,
-                show_filename_only = false,
-                mode = 0,
-                right_padding = 5,
-                left_padding = 5,
-                use_mode_colors = true,
-                buffers_color = {
-                    -- Same values as the general color option can be used here.
-                    active = {
-                        fg = auto.normal.a.fg,
-                        bg = auto.normal.a.bg,
-                        gui = "bold",
-                    },
-                    inactive = {
-                        fg = auto.normal.a.fg,
-                        bg = auto.normal.a.bg,
-                        gui = "italic",
-                    },
-                },
-                symbols = {
-                    modified = " ●",
-                    alternate_file = "",
-                    directory = "",
-                },
-            },
-        },
-    },
-
     extensions = { "nvim-tree", "mason", "fzf" },
 }
 
